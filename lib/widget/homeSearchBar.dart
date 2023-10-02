@@ -23,7 +23,10 @@ class _HomeSerchBarState extends State<HomeSerchBar> {
       child: Row(
         children: [
           TextFormField(
-
+            keyboardType: TextInputType.text,
+            decoration: InputDecoration(
+              labelText: "Search Item"
+            ),
           )
         ],
       ),
