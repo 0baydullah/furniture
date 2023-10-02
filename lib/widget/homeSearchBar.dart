@@ -12,7 +12,7 @@ class _HomeSerchBarState extends State<HomeSerchBar> {
     return Container(
       margin: EdgeInsets.fromLTRB(15, 420, 15, 0),
       height: 72,
-      width: double.infinity,
+      width: 100,
       decoration: const BoxDecoration(
         //color: Colors.black54,
         color: Color(0xFF1C1C25),
