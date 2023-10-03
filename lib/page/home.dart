@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:furniture/widget/homeGridList.dart';
 import 'package:furniture/widget/homeSearchBar.dart';
 
 class Home extends StatefulWidget {
@@ -137,6 +138,9 @@ class _HomeState extends State<Home> {
             /// Search Bar container call
             HomeSerchBar(),
 
+
+            /// Home grid list call
+            HomeGridList(),
 
           ],
         ),
