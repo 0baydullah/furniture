@@ -70,7 +70,7 @@ class _DetailsState extends State<Details> {
             child: Row(
               children: [
                 Text(
-                  "Dining Table",
+                  "Dining Chair",
                   style: TextStyle(
                     color: Colors.grey.shade600,
                     fontSize: 18,
