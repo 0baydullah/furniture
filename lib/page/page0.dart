@@ -10,7 +10,7 @@ class Page0 extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage('asset/bg.png'), fit: BoxFit.cover),
         ),
@@ -21,7 +21,7 @@ class Page0 extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Text(
+              const Text(
                 "We design \nFurniture for \nYour comfort",
                 style: TextStyle(
                   fontSize: 50,
@@ -29,11 +29,11 @@ class Page0 extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               InkWell(
                 onTap: () {
                   Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (context) => Home()));
+                      context, MaterialPageRoute(builder: (context) => const Home()));
                 },
                 child: Container(
                   height: 99,
@@ -42,7 +42,7 @@ class Page0 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.black,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Get Started",
                       style: TextStyle(
