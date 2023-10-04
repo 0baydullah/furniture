@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:furniture/page/details.dart';
 
 class HomeGridList extends StatefulWidget {
   const HomeGridList({super.key});
@@ -126,7 +127,8 @@ class _HomeGridListState extends State<HomeGridList> {
         itemBuilder: (BuildContext context, int index) {
           return InkWell(
             onTap: (){
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Details(
+                  url: gridItem[index].image, name: gridItem[index].name, price: gridItem[index].price)));
             },
             child: Container(
               decoration: BoxDecoration(
